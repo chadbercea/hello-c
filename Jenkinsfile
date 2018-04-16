@@ -7,8 +7,17 @@ pipeline {
       }
     }
     stage('Test') {
-      steps {
-        sh 'make test'
+      parallel {
+        stage('Test') {
+          steps {
+            sh 'make test'
+          }
+        }
+        stage('FF Test') {
+          steps {
+            echo 'Firefox is chill'
+          }
+        }
       }
     }
     stage('Deploy') {
