@@ -1,13 +1,13 @@
 #!/usr/bin/env bats
 
-@test "prints 'Hello world!'" {
+@test "prints 'GTFO!'" {
   run ./hello
   [ $status -eq 0 ]
-  [ $output = "Hello world!" ]
+  [ $output = "GTFO!" ]
 }
 
-@test "prints 'Hello John!'" {
-  run ./hello John
+@test "prints 'What it do Chad?'" {
+  run ./hello Chad
   [ $status -eq 0 ]
-  [ $output = "Hello John!" ]
+  [ $output = "What it do Chad?" ]
 }
