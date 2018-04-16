@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Check Out') {
+    stage('Build') {
       steps {
-        sh 'echo "hello world"'
+        sh 'make'
       }
     }
   }
