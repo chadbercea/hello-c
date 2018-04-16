@@ -23,6 +23,7 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'DePlOyEd all the things!'
+        sleep 10
       }
     }
   }
