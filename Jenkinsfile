@@ -18,6 +18,11 @@ pipeline {
             echo 'Firefox is chill'
           }
         }
+        stage('Other Browser') {
+          steps {
+            echo 'Other Browser Works'
+          }
+        }
       }
     }
     stage('Deploy') {
